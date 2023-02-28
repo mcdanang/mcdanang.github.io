@@ -2,7 +2,7 @@
   "name": "portofolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mcdanang.github.io",
+  "homepage": "https://mcdanang.github.io/porto-react",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",
