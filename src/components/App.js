@@ -16,9 +16,9 @@ const Animated = () => {
       <AnimatePresence mode='wait' >
           <Routes location={location} 
               key={location.pathname}>
-              <Route exact path="/" element={<Welcome/>}></Route>
-              <Route path="/work" element={<Projects/>}></Route>
-              <Route path="/contact" element={<Contact/>}></Route>
+              <Route exact path="/porto-react/" element={<Welcome/>}></Route>
+              <Route path="/porto-react/work" element={<Projects/>}></Route>
+              <Route path="/porto-react/contact" element={<Contact/>}></Route>
           </Routes>
       </AnimatePresence>
   )

@@ -5,13 +5,13 @@ function Navbar() {
     <nav id="navbar" className="nav">
       <ul className="nav-list">
         <li>
-          <Link to="/">About</Link>
+          <Link to="/porto-react/">About</Link>
         </li>
         <li>
-          <Link to="/work">Work</Link>
+          <Link to="/porto-react/work">Work</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/porto-react/contact">Contact</Link>
         </li>
       </ul>
     </nav>
