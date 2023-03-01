@@ -1,6 +1,6 @@
 import profilePicture from '../assets/Danang.jpg';
 import Transitions from './Transitions';
-import { Tag } from '@chakra-ui/react';
+import { Tag, Image } from '@chakra-ui/react';
 
 function Welcome() {
   return (
@@ -8,7 +8,14 @@ function Welcome() {
       <section id="welcome-section" className="welcome-section">
         <h1>Hey I am Danang Priambodo</h1>
         <p className="job-title">a full stack web developer</p>
-        <img className="photo" src={profilePicture} alt="Profile" />
+        <Image
+          borderRadius='full'
+          boxSize='200px'
+          src={profilePicture}
+          alt='Profile Picture'
+          mt={"3em"}
+          mb={"3em"}
+        />
         <p className="description">Skills include:<br /><br /></p>
         <ul className="skill">
           <li>

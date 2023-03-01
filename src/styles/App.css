@@ -173,13 +173,6 @@ img {
   text-align: center;
 }
 
-.welcome-section > img.photo {
-  width: 200px;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  border-radius: 100px;
-}
-
 .welcome-section > ul.skill {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
