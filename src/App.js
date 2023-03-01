@@ -1,9 +1,9 @@
-import '../styles/App.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Contact from './Contact';
-import Welcome from './Welcome';
-import Projects from './Projects';
+import './styles/App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Welcome from './components/Welcome';
+import Projects from './components/Projects';
 
 // import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

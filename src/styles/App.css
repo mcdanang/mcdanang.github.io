@@ -182,7 +182,7 @@ img {
 
 .welcome-section > ul.skill {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   font-size: 1.6rem;
   line-height: 3rem;
   color: var(--main-red);

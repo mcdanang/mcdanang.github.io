@@ -1,5 +1,6 @@
 import profilePicture from '../assets/Danang.jpg';
 import Transitions from './Transitions';
+import { Tag } from '@chakra-ui/react';
 
 function Welcome() {
   return (
@@ -11,16 +12,32 @@ function Welcome() {
         <p className="description">Skills include:<br /><br /></p>
         <ul className="skill">
           <li>
-            <b>Backend</b><br />
-            <span className="code">&lt;</span>NodeJS, Python<span className="code">/&gt;</span>
+            <span className="code">&lt;</span><b>Language</b><span className="code">/&gt;</span><br />
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Javascript</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Typescript</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Python</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Golang</Tag>
           </li>
           <li>
-            <b>Frontend</b><br />
-            <span className="code">&lt;</span>HTML, CSS, JavaScript<span className="code">/&gt;</span>
+            <span className="code">&lt;</span><b>Backend</b><span className="code">/&gt;</span><br />
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Node.js</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Express.js</Tag>
           </li>
           <li>
-            <b>Database</b><br />
-            <span className="code">&lt;</span>PostgreSQL, MySQL, MongoDB<span className="code">/&gt;</span>
+            <span className="code">&lt;</span><b>Frontend</b><span className="code">/&gt;</span><br />
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>HTML</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>CSS</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>JavaScript</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>React</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Tailwind</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Bootstrap</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Chakra</Tag>
+          </li>
+          <li>
+            <span className="code">&lt;</span><b>Database</b><span className="code">/&gt;</span><br />
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>PostgreSQL</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>MySQL</Tag>
+            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>MongoDB</Tag>
           </li>
         </ul>
       </section>
