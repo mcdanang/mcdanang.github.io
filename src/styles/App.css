@@ -156,6 +156,7 @@ img {
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .welcome-section > p.job-title {
