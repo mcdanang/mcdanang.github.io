@@ -138,10 +138,11 @@ img {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .nav-list a:hover {
-  background: var(--main-blue);
+  background: rgb(93, 22, 22);
 }
 
 /* Welcome section */
@@ -152,9 +153,9 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  padding-top: 60px;
 }
 
 .welcome-section > p.job-title {
@@ -175,7 +176,7 @@ img {
 
 .welcome-section > ul.skill {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: 1.6rem;
   line-height: 3rem;
   color: var(--main-red);
@@ -194,6 +195,7 @@ img {
 }
 
 .projects-section-header {
+  padding-top: 20px;
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);

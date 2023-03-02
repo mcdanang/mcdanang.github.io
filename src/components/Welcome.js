@@ -3,6 +3,11 @@ import Transitions from './Transitions';
 import { Tag, Image } from '@chakra-ui/react';
 
 function Welcome() {
+
+  function skillList(arr) {
+    return arr.map(skill => <Tag m={2} size='md' key='md' variant='solid' colorScheme='orange'>{skill}</Tag>);
+  }
+
   return (
     <Transitions>
       <section id="welcome-section" className="welcome-section">
@@ -20,31 +25,19 @@ function Welcome() {
         <ul className="skill">
           <li>
             <span className="code">&lt;</span><b>Language</b><span className="code">/&gt;</span><br />
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Javascript</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Typescript</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Python</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Golang</Tag>
-          </li>
-          <li>
-            <span className="code">&lt;</span><b>Backend</b><span className="code">/&gt;</span><br />
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Node.js</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Express.js</Tag>
+            {skillList(["Javascript", "Typescript", "Python", "Golang"])}
           </li>
           <li>
             <span className="code">&lt;</span><b>Frontend</b><span className="code">/&gt;</span><br />
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>HTML</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>CSS</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>JavaScript</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>React</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Tailwind</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Bootstrap</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>Chakra</Tag>
+            {skillList(["HTML", "CSS", "React", "Tailwind", "Bootstrap", "Chakra"])}
+          </li>
+          <li>
+            <span className="code">&lt;</span><b>Backend</b><span className="code">/&gt;</span><br />
+            {skillList(["Node.js", "Express.js", "REST API"])}
           </li>
           <li>
             <span className="code">&lt;</span><b>Database</b><span className="code">/&gt;</span><br />
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>PostgreSQL</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>MySQL</Tag>
-            <Tag m={2} size='lg' key='lg' variant='solid' colorScheme='orange'>MongoDB</Tag>
+            {skillList(["MySQL", "PostgreSQL", "MongoDB"])}
           </li>
         </ul>
       </section>
